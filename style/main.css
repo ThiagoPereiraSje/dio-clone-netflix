@@ -1,6 +1,7 @@
 :root {
   --vermelho: #e50914;
   --preta: #141414;
+  --pelicula: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -12,7 +13,10 @@
 body {
   background: var(--preta);
   font-family: "Times New Roman", Times, serif;
+  color: white;
 }
+
+/* cabeçalho */
 
 header .container {
   display: flex;
@@ -36,4 +40,28 @@ header nav a {
 
 header nav a:hover {
   color: #fff;
+}
+
+/* filme principal */
+
+main .filme-principal {
+  font-size: 18px;
+  background: linear-gradient(var(--pelicula), var(--pelicula) 100%),
+    url("../img/capa-house.jpg");
+  background-size: cover;
+  height: 400px;
+
+  /* desktop: main axis => row, cross axis => column */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .filme-principal .descricao {
+  margin-bottom: 40px;
+}
+
+main .filme-principal .titulo {
+  font-size: 40px;
 }
