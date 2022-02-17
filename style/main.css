@@ -103,3 +103,7 @@ main .filme-principal .titulo {
   height: 100%;
   display: block;
 }
+
+section.container {
+  padding: 1em;
+}
